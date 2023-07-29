@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Food Safety App
+          Food Safety App v1
         </a>
       </header>
     </div>
