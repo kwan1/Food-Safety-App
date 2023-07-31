@@ -1,0 +1,53 @@
+.multiple {
+  max-width: 400px;
+  min-width: 100px;
+  height: 100vh; /* Set the form to take 100% of the viewport height */
+  width: 90%;
+  margin: -120px auto 0; /* Add negative top margin to move the form up */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the form contents vertically */
+  align-items: center; /* Center the form contents horizontally */
+  gap: 1rem;
+  text-align: center;
+}
+
+/* Rest of the CSS remains unchanged */
+.multiple__input,
+.multiple__button,
+.multiple__textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  position: relative;
+}
+
+.multiple__input {
+  padding: 5px;
+}
+
+.multiple__text {
+  display: grid;
+  justify-content: center;
+}
+
+.multiple__button {
+  display: block;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.multiple__textarea {
+  padding: 10px;
+  resize: none;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.multiple__textarea textarea {
+  margin: 0 auto;
+}

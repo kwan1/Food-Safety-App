@@ -1,7 +1,10 @@
-# Getting Started with Create React App
+# Getting Started with Food Safety App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+make sure you have the right library. this update includes react-hook-form
 
+will need to install this package on the project directory,
+
+simply run npm i react-hook-form
 ## Available Scripts
 
 In the project directory, you can run:
