@@ -1,5 +1,5 @@
 .multiple {
-  max-width: 400px;
+  max-width: 300px;
   min-width: 100px;
   height: 100vh; /* Set the form to take 100% of the viewport height */
   width: 90%;
@@ -50,4 +50,8 @@
 
 .multiple__textarea textarea {
   margin: 0 auto;
+}
+
+.dropdown__selected {
+  margin-top: 9rem;
 }

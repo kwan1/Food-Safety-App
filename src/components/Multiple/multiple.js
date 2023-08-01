@@ -6,7 +6,10 @@ export default function Multiple() {
     name: "",
     email: "",
     message: "",
-  });
+  })
+
+  const [selectionOption, setSelectionOption] = useState("grapefruit");
+
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -16,8 +19,12 @@ export default function Multiple() {
   const handleSubmit = (event) => {
     event.preventDefault();
     alert(
-      `Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}`
+      `Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}, Selection: ${selectionOption}`
     );
+  };
+
+  const handleDropdownChange = (event) => {
+    setSelectionOption(event.target.value);
   };
 
   return (
@@ -60,6 +67,18 @@ export default function Multiple() {
         onChange={handleChange}
         placeholder="Enter your message"
       />
+
+      <form>
+        <label >
+          Select your favorite flavor:
+          <select value={selectionOption} onChange={handleDropdownChange}>
+            <option value="Grapefruit">Grapefruit</option>
+            <option value="Lime">Lime</option>
+            <option value="Coconut">Coconut</option>
+            <option value="Mango">Mango</option>
+          </select>
+        </label>
+      </form>
 
       <button className="multiple__button" type="submit">
         Submit
