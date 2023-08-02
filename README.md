@@ -1,10 +1,5 @@
 # Getting Started with Food Safety App
 
-make sure you have the right library. this update includes react-hook-form
-
-will need to install this package on the project directory,
-
-simply run `npm i react-hook-form`
 ## Available Scripts
 
 In the project directory, you can run:
