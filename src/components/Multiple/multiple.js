@@ -28,6 +28,7 @@ export default function Multiple() {
   };
 
   return (
+    <div className="multiple">
     <form onSubmit={handleSubmit} className="multiple">
       <label className="multiple__text" htmlFor="name">
         Name:
@@ -84,5 +85,6 @@ export default function Multiple() {
         Submit
       </button>
     </form>
+    </div>
   );
 }

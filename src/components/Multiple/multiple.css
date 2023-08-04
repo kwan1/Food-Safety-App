@@ -1,15 +1,15 @@
 .multiple {
-  max-width: 300px;
-  min-width: 100px;
-  height: 100vh; /* Set the form to take 100% of the viewport height */
-  width: 90%;
+  height: 100vh;     /* Set the form to take 100% of the viewport height */
+  max-width: 90%;
   margin: -120px auto 0; /* Add negative top margin to move the form up */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center; /* Center the form contents vertically */
-  align-items: center; /* Center the form contents horizontally */
+  justify-content: center;                /*Center the form contents vertically */
+  align-items: center;  /*Center the form contents horizontally */
   gap: 1rem;
   text-align: center;
+  float: left;
 }
 
 /* Rest of the CSS remains unchanged */
@@ -20,7 +20,7 @@
   font-size: 1rem;
   width: 100%;
   padding: 10px;
-  display: grid;
+  display: flex;
   position: relative;
 }
 
@@ -55,3 +55,16 @@
 .dropdown__selected {
   margin-top: 9rem;
 }
+
+.container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px; /* Adjust the gap between boxes as needed */
+  max-width: 100%;
+}
+
+.box {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
