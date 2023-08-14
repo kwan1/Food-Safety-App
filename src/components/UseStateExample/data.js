@@ -11,3 +11,6 @@ export const letters = [{
     subject: 'Lessons Begins in 3 days!',
     isStarred: false,
   }];
+
+
+  // https://react.dev/learn/choosing-the-state-structure
