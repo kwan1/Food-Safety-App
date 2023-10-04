@@ -7,6 +7,7 @@ const App = () => {
     <div class="container">
     <Multiple />
     <Multiple />
+    <Multiple />
     {/* <MailClient/>    This is UseState Example */}
     </div>
     </div>
