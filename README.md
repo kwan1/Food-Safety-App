@@ -70,3 +70,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 --
 test jenkins - finally working
 the trick is to get ngrok for it to access locally hosted jenkins.
+
+
+--
+
+### Run using Docker
+install docker desktop app here: `https://docs.docker.com/desktop/install/mac-install/`
+
+brew install docker for cli
+
+to build the image: `docker build -t <image_name:image_tag> .`
+
+to run the the image in a container, `docker run -dp 3000:3000 --name <insert_name> <image_name>:<image_tag> `
