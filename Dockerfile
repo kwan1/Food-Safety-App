@@ -5,16 +5,19 @@ FROM node:14-alpine
 RUN adduser -D -g '' myuser
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /fsa
 
 # Copy only package.json and package-lock.json to the container
 COPY --chown=myuser:myuser package*.json ./
+
 # Install app dependencies and clean up
-RUN npm set progress=false && npm config set depth 0 && npm cache clean --force && npm ci --production
+RUN npm install -g \
+    && npm ci --production \
+    && npm cache clean --force
 
 # Copy the rest of your application's source code
 COPY --chown=myuser:myuser . .
-USER myuser
+
 # Expose the port your app will run on
 EXPOSE 3000
 
